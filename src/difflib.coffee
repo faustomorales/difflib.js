@@ -1323,16 +1323,4 @@ restore = (delta, which) ->
   lines
 
 # exports to global
-exports._arrayCmp           = _arrayCmp
-exports.SequenceMatcher     = SequenceMatcher
-exports.getCloseMatches     = getCloseMatches
-exports._countLeading       = _countLeading
-exports.Differ              = Differ
-exports.IS_LINE_JUNK        = IS_LINE_JUNK
-exports.IS_CHARACTER_JUNK   = IS_CHARACTER_JUNK
-exports._formatRangeUnified = _formatRangeUnified
-exports.unifiedDiff         = unifiedDiff
-exports._formatRangeContext = _formatRangeContext
-exports.contextDiff         = contextDiff
-exports.ndiff               = ndiff
-exports.restore             = restore
+export default { SequenceMatcher, getCloseMatches, Differ, unifiedDiff, contextDiff, ndiff, restore }
